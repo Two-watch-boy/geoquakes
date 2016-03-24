@@ -26,7 +26,7 @@ function onSuccess(json){
   console.log(json);
   // console.log(json.features[i].properties.place);
   // console.log(json.features[i].geometry.coordinates);
-  for (var i=0;i<70;i++){
+  for (var i=0;i<50;i++){
     $("#quakes").append($("<li class='quake'>" + json.features[i].properties.place + " " + json.features[i].geometry.coordinates + "</li>"));
   }
   console.log("hi there");
